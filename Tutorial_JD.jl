@@ -9,6 +9,8 @@ using PowerGraphics
 using JuMP
 plotlyjs()
 
+include("get_data.jl")
+
 free_solver = optimizer_with_attributes(Cbc.Optimizer, "ratioGap" => 1e-3)
 solver = optimizer_with_attributes(CPLEX.Optimizer)
 
