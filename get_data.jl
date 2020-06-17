@@ -35,4 +35,4 @@ rawsys = PSY.PowerSystemTableData(
 sys_DA = System(rawsys; forecast_resolution = Dates.Hour(1))
 sys_RT = System(rawsys; forecast_resolution = Dates.Minute(5))
 
-#to_json(sys_DA, "RTS_1hr_sys_agc.json", force = true)
+to_json(sys_DA, "RTS_1hr_sys_agc.json", force = true)
